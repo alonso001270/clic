@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clic Express</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Clic Express</h1>
+    <button onclick="scrollToFormulario()">Hacer Pedido</button>
+  </header>
+
+  <main>
+    <section id="productos">
+      <h2>🍔 Productos</h2>
+      <div id="contenedor-productos"></div>
+    </section>
+
+    <section id="carrito">
+      <h2>🛒 Carrito de Compras</h2>
+      <ul id="lista-carrito"></ul>
+      <p id="total">Total: ₡0</p>
+      <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </section>
+
+    <section id="formulario">
+      <h2>📦 Confirmar Pedido</h2>
+      <form onsubmit="return enviarFormulario(event)">
+        <input type="text" id="nombre" placeholder="Nombre completo" required />
+        <input type="tel" id="telefono" placeholder="Número de teléfono" required />
+        <textarea id="pedido" placeholder="¿Qué desea pedir?" required></textarea>
+        <button type="submit">Enviar Pedido</button>
+      </form>
+      <p id="confirmacion" class="exito" style="display:none;">✅ Pedido enviado correctamente.</p>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/formulario.js"></script>
+</body>
+</html>

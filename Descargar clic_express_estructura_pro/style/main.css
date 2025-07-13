@@ -1,0 +1,97 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header button {
+  background: orange;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.producto {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.producto button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#carrito {
+  background: #fff;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#carrito ul {
+  list-style: none;
+  padding: 0;
+}
+
+#carrito li {
+  margin: 5px 0;
+}
+
+#formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  max-width: 400px;
+}
+
+#formulario input, #formulario textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#formulario button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.exito {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
